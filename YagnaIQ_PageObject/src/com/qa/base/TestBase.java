@@ -1,6 +1,6 @@
 package com.qa.base;
 
-z
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -20,8 +20,7 @@ public class TestBase {
 
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/home/tushar/repository/YagnaIQ_PageObject/"
-					+ "src/com/qa/config/config.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("/home/tushar/repository/YagnaIQ_PageObject/src/com/qa/config/config.properties"));
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -32,7 +31,7 @@ public class TestBase {
 
 		public static void initialization(){
 			String browserName = prop.getProperty("browser");
-			
+			System.out.println("test");
 			if(browserName.equals("chrome")){
 				System.setProperty("webdriver.chrome.driver", "/home/tushar/automation4/NewKeyWordDrivenFramework_TestNG/chromedriver");	
 				driver = new ChromeDriver(); 

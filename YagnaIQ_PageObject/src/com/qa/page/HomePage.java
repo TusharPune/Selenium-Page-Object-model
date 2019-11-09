@@ -1,5 +1,7 @@
 package com.qa.page;
 
-public class HomePage {
+import com.qa.base.TestBase;
+
+public class HomePage extends TestBase{
 
 }
