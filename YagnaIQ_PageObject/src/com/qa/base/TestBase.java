@@ -18,22 +18,24 @@ public class TestBase {
 	
 	public TestBase() {	
 
-		try {
-			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("/home/tushar/repository/YagnaIQ_PageObject/src/com/qa/config/config.properties"));
-			prop.load(ip);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			prop = new Properties();
+//			FileInputStream ip = new FileInputStream(System.getProperty("/home/tushar/repository/YagnaIQ_PageObject/src/com/qa/config/config.properties"));
+//			prop.load(ip);
+//		} catch (FileNotFoundException e) {
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	}
 
 		public static void initialization(){
-			String browserName = prop.getProperty("browser");
-			System.out.println("test");
+//			String browserName = prop.getProperty("browser");
+//			System.out.println("test");
+			
+			String browserName ="chrome"; 
 			if(browserName.equals("chrome")){
-				System.setProperty("webdriver.chrome.driver", "/home/tushar/automation4/NewKeyWordDrivenFramework_TestNG/chromedriver");	
+				System.setProperty("webdriver.chrome.driver", "/home/tushar/automation4 (1)/NewKeyWordDrivenFramework_TestNG/chromedriver");	
 				driver = new ChromeDriver(); 
 			}
 			else if(browserName.equals("FF")){
@@ -47,6 +49,6 @@ public class TestBase {
 			driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
-			driver.get(prop.getProperty("url"));
+			driver.get("http://www.crm360.co.in/");
 	}
 }

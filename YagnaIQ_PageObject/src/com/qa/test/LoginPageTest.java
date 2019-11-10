@@ -18,18 +18,21 @@ public class LoginPageTest extends TestBase {
 	HomePage homePage;
 
 	public LoginPageTest(){
-		super();
+//		super();
 	}
 
 	@BeforeMethod
 	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
+		
+		
 	}
 
 	@Test(priority = 1)
 	public void loginTest() {
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		loginPage.clickonlogin();
+//		homePage = loginPage.login("yagnaingramsingaporspuser1","Yagna123");
 	}
 
 	@AfterMethod
