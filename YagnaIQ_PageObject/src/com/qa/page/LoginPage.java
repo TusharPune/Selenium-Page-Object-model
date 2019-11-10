@@ -12,6 +12,9 @@ public class LoginPage extends TestBase {
 
 	@FindBy(id = "Li1")
 	WebElement loginbtn;
+	
+	@FindBy(id = "Li2")
+	WebElement regbtn;
 
 	@FindBy(name = "userName")
 	WebElement username;
@@ -38,6 +41,12 @@ public class LoginPage extends TestBase {
 		loginBtn.click();
 
 		return new HomePage();
+	}
+	
+	public LoginPage clickToregister() {
+		regbtn.click();
+		return new LoginPage();
+		
 	}
 
 }

@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.TestException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -17,7 +18,7 @@ public class LoginPageTest extends TestBase {
 	LoginPage loginPage;
 	HomePage homePage;
 
-	public LoginPageTest(){
+	public LoginPageTest() {
 //		super();
 	}
 
@@ -25,8 +26,6 @@ public class LoginPageTest extends TestBase {
 	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
-		
-		
 	}
 
 	@Test(priority = 1)
