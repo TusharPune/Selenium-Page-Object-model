@@ -47,10 +47,8 @@ public class RegisterTest extends TestBase {
 	@Test(priority = 1, dataProvider = "getTestData")
 	public void registetrpagetest(String fname, String lname, String comp,String eid, String Mno) {
 		loginPage.clickToregister( );
-//		String Tushar = "tushar", patil = "Patil", companyname = "Comppany";
-//		String emailid = "test@test.com"; 
-//		int mobno=1234567890;
 
+		System.out.printf(fname, lname,comp,eid);
 		regpage.entername(fname, lname);
 		regpage.company(comp);
 		regpage.emailid(eid);

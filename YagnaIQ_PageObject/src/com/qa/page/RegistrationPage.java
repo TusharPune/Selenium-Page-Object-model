@@ -42,6 +42,7 @@ public class RegistrationPage extends TestBase {
 	public void entername(String first, String last) {
 		firstname.sendKeys(first);
 		lastname.sendKeys(last);
+		
 	}
 
 	public void jobtitle() {
