@@ -2,20 +2,47 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12363" started-at="2019-11-10T16:03:52 IST" finished-at="2019-11-10T16:04:05 IST">
+  <suite name="Default suite" duration-ms="5223" started-at="2019-11-11T20:08:41 IST" finished-at="2019-11-11T20:08:47 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12363" started-at="2019-11-10T16:03:52 IST" finished-at="2019-11-10T16:04:05 IST">
+    <test name="Default test" duration-ms="5223" started-at="2019-11-11T20:08:41 IST" finished-at="2019-11-11T20:08:47 IST">
       <class name="com.qa.test.RegisterTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.RegisterTest@1f28c152]" name="setUp" is-config="true" duration-ms="5029" started-at="2019-11-10T16:03:52 IST" finished-at="2019-11-10T16:03:57 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.RegisterTest@6737fd8f]" name="setUp" is-config="true" duration-ms="2781" started-at="2019-11-11T20:08:42 IST" finished-at="2019-11-11T20:08:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registetrpagetest()[pri:1, instance:com.qa.test.RegisterTest@1f28c152]" name="registetrpagetest" duration-ms="7202" started-at="2019-11-10T16:03:57 IST" finished-at="2019-11-10T16:04:04 IST">
+        <test-method status="PASS" signature="registetrpagetest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.test.RegisterTest@6737fd8f]" name="registetrpagetest" duration-ms="1768" started-at="2019-11-11T20:08:45 IST" data-provider="getTestData" finished-at="2019-11-11T20:08:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tushar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Patil]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[tuhar@test.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1.3213131E7]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registetrpagetest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.RegisterTest@1f28c152]" name="tearDown" is-config="true" duration-ms="81" started-at="2019-11-10T16:04:04 IST" finished-at="2019-11-10T16:04:05 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.RegisterTest@6737fd8f]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-11-11T20:08:47 IST" finished-at="2019-11-11T20:08:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

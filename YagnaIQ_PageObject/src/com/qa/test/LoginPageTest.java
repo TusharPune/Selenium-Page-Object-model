@@ -19,7 +19,7 @@ public class LoginPageTest extends TestBase {
 	HomePage homePage;
 
 	public LoginPageTest() {
-//		super();
+   	super();
 	}
 
 	@BeforeMethod
@@ -31,7 +31,7 @@ public class LoginPageTest extends TestBase {
 	@Test(priority = 1)
 	public void loginTest() {
 		loginPage.clickonlogin();
-//		homePage = loginPage.login("yagnaingramsingaporspuser1","Yagna123");
+//	homePage = loginPage.login("yagnaingramsingaporspuser1","Yagna123");
 	}
 
 	@AfterMethod
