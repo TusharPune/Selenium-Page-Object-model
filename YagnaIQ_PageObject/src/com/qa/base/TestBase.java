@@ -40,7 +40,7 @@ public class TestBase {
 			
 			String browserName ="chrome"; 
 			if(browserName.equals("chrome")){
-				System.setProperty("webdriver.chrome.driver", "/home/tushar/automation4 (1)/NewKeyWordDrivenFramework_TestNG/chromedriver");	
+				System.setProperty("webdriver.chrome.driver", "/home/tushar/Automation/chromedriver");	
 				driver = new ChromeDriver(); 
 			}
 			else if(browserName.equals("FF")){

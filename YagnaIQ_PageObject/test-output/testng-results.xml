@@ -1,442 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44494" started-at="2019-11-11T20:27:26 IST" finished-at="2019-11-11T20:28:10 IST">
+  <suite name="Default suite" duration-ms="13351" started-at="2019-11-12T19:22:28 IST" finished-at="2019-11-12T19:22:41 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44494" started-at="2019-11-11T20:27:26 IST" finished-at="2019-11-11T20:28:10 IST">
-      <class name="com.qa.test.RegisterTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="setUp" is-config="true" duration-ms="3163" started-at="2019-11-11T20:27:26 IST" finished-at="2019-11-11T20:27:29 IST">
+    <test name="Default test" duration-ms="13351" started-at="2019-11-12T19:22:28 IST" finished-at="2019-11-12T19:22:41 IST">
+      <class name="com.qa.test.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.LoginPageTest@4973813a]" name="setUp" is-config="true" duration-ms="2862" started-at="2019-11-12T19:22:28 IST" finished-at="2019-11-12T19:22:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registetrpagetest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.test.RegisterTest@a7e666]" name="registetrpagetest" duration-ms="1736" started-at="2019-11-11T20:27:29 IST" data-provider="getTestData" finished-at="2019-11-11T20:27:31 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tushar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Patil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[tuhar20@test.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1.3213131E7]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="loginTest()[pri:1, instance:com.qa.test.LoginPageTest@4973813a]" name="loginTest" duration-ms="10227" started-at="2019-11-12T19:22:31 IST" finished-at="2019-11-12T19:22:41 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"name","selector":"userName"}
+  (Session info: chrome=77.0.3865.90)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-66-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'Tushar-Patil', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.90, webStorageEnabled: true}
+Session ID: cb88d9b8f0d3f0225d5e1331ed8c4481
+*** Element info: {Using=name, value=userName}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"userName"}
+  (Session info: chrome=77.0.3865.90)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-66-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'Tushar-Patil', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.90, webStorageEnabled: true}
+Session ID: cb88d9b8f0d3f0225d5e1331ed8c4481
+*** Element info: {Using=name, value=userName}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+at com.qa.page.LoginPage.login(LoginPage.java:39)
+at com.qa.test.LoginPageTest.loginTest(LoginPageTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1249)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registetrpagetest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="tearDown" is-config="true" duration-ms="122" started-at="2019-11-11T20:27:31 IST" finished-at="2019-11-11T20:27:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="setUp" is-config="true" duration-ms="1934" started-at="2019-11-11T20:27:31 IST" finished-at="2019-11-11T20:27:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registetrpagetest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.test.RegisterTest@a7e666]" name="registetrpagetest" duration-ms="1547" started-at="2019-11-11T20:27:33 IST" data-provider="getTestData" finished-at="2019-11-11T20:27:35 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tushar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Patil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[tuhar30@test.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1.3213132E7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registetrpagetest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="tearDown" is-config="true" duration-ms="151" started-at="2019-11-11T20:27:35 IST" finished-at="2019-11-11T20:27:35 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="setUp" is-config="true" duration-ms="1997" started-at="2019-11-11T20:27:35 IST" finished-at="2019-11-11T20:27:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registetrpagetest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.test.RegisterTest@a7e666]" name="registetrpagetest" duration-ms="1441" started-at="2019-11-11T20:27:37 IST" data-provider="getTestData" finished-at="2019-11-11T20:27:38 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tushar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Patil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[tuhar40@test.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1.3213133E7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registetrpagetest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="tearDown" is-config="true" duration-ms="175" started-at="2019-11-11T20:27:38 IST" finished-at="2019-11-11T20:27:39 IST">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.LoginPageTest@4973813a]" name="tearDown" is-config="true" duration-ms="175" started-at="2019-11-12T19:22:41 IST" finished-at="2019-11-12T19:22:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="setUp" is-config="true" duration-ms="1900" started-at="2019-11-11T20:27:39 IST" finished-at="2019-11-11T20:27:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registetrpagetest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.test.RegisterTest@a7e666]" name="registetrpagetest" duration-ms="1489" started-at="2019-11-11T20:27:40 IST" data-provider="getTestData" finished-at="2019-11-11T20:27:42 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tushar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Patil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[tuhar50@test.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1.3213134E7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registetrpagetest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="tearDown" is-config="true" duration-ms="119" started-at="2019-11-11T20:27:42 IST" finished-at="2019-11-11T20:27:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="setUp" is-config="true" duration-ms="3550" started-at="2019-11-11T20:27:42 IST" finished-at="2019-11-11T20:27:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registetrpagetest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.test.RegisterTest@a7e666]" name="registetrpagetest" duration-ms="1568" started-at="2019-11-11T20:27:46 IST" data-provider="getTestData" finished-at="2019-11-11T20:27:47 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tushar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Patil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[tuhar60@test.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1.3213135E7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registetrpagetest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="tearDown" is-config="true" duration-ms="125" started-at="2019-11-11T20:27:47 IST" finished-at="2019-11-11T20:27:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="setUp" is-config="true" duration-ms="3359" started-at="2019-11-11T20:27:47 IST" finished-at="2019-11-11T20:27:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registetrpagetest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.test.RegisterTest@a7e666]" name="registetrpagetest" duration-ms="1627" started-at="2019-11-11T20:27:51 IST" data-provider="getTestData" finished-at="2019-11-11T20:27:52 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tushar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Patil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[tuhar70@test.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1.3213136E7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registetrpagetest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="tearDown" is-config="true" duration-ms="70" started-at="2019-11-11T20:27:52 IST" finished-at="2019-11-11T20:27:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="setUp" is-config="true" duration-ms="2023" started-at="2019-11-11T20:27:52 IST" finished-at="2019-11-11T20:27:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registetrpagetest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.test.RegisterTest@a7e666]" name="registetrpagetest" duration-ms="1501" started-at="2019-11-11T20:27:54 IST" data-provider="getTestData" finished-at="2019-11-11T20:27:56 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tushar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Patil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[tuhar80@test.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1.3213137E7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registetrpagetest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="tearDown" is-config="true" duration-ms="169" started-at="2019-11-11T20:27:56 IST" finished-at="2019-11-11T20:27:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="setUp" is-config="true" duration-ms="1921" started-at="2019-11-11T20:27:56 IST" finished-at="2019-11-11T20:27:58 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registetrpagetest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.test.RegisterTest@a7e666]" name="registetrpagetest" duration-ms="1427" started-at="2019-11-11T20:27:58 IST" data-provider="getTestData" finished-at="2019-11-11T20:27:59 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tushar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Patil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[tuhar90@test.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1.3213138E7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registetrpagetest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="tearDown" is-config="true" duration-ms="134" started-at="2019-11-11T20:27:59 IST" finished-at="2019-11-11T20:28:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="setUp" is-config="true" duration-ms="2015" started-at="2019-11-11T20:28:00 IST" finished-at="2019-11-11T20:28:02 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registetrpagetest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.test.RegisterTest@a7e666]" name="registetrpagetest" duration-ms="1471" started-at="2019-11-11T20:28:02 IST" data-provider="getTestData" finished-at="2019-11-11T20:28:03 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tushar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Patil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[tuhar100@test.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1.3213139E7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registetrpagetest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="tearDown" is-config="true" duration-ms="175" started-at="2019-11-11T20:28:03 IST" finished-at="2019-11-11T20:28:03 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="setUp" is-config="true" duration-ms="1962" started-at="2019-11-11T20:28:03 IST" finished-at="2019-11-11T20:28:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registetrpagetest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.test.RegisterTest@a7e666]" name="registetrpagetest" duration-ms="1364" started-at="2019-11-11T20:28:05 IST" data-provider="getTestData" finished-at="2019-11-11T20:28:07 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tushar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Patil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[tuhar110@test.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1.321314E7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registetrpagetest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="tearDown" is-config="true" duration-ms="73" started-at="2019-11-11T20:28:07 IST" finished-at="2019-11-11T20:28:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="setUp" is-config="true" duration-ms="1854" started-at="2019-11-11T20:28:07 IST" finished-at="2019-11-11T20:28:08 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registetrpagetest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.test.RegisterTest@a7e666]" name="registetrpagetest" duration-ms="1483" started-at="2019-11-11T20:28:08 IST" data-provider="getTestData" finished-at="2019-11-11T20:28:10 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tushar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Patil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[tuhar120@test.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1.3213141E7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registetrpagetest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.RegisterTest@a7e666]" name="tearDown" is-config="true" duration-ms="121" started-at="2019-11-11T20:28:10 IST" finished-at="2019-11-11T20:28:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.test.RegisterTest -->
+      </class> <!-- com.qa.test.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
