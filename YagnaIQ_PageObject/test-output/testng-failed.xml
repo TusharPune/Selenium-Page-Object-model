@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Yagna Application Test Automation Test Suite]">
   <listeners>
-    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG2"/>
   </listeners>
   <test thread-count="5" name="Yagna App Test Cases(failed)">
     <classes>
@@ -10,7 +10,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="registetrpagetest" invocation-numbers="3"/>
+          <include name="registetrpagetest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.qa.test.RegisterTest -->
       <class name="com.qa.test.LoginPageTest">

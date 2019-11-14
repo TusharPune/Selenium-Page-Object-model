@@ -3,7 +3,7 @@
 <suite name="Yagna Application Test Automation Test Suite">
 
 	<listeners>
-		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG2" />
 	</listeners>
 
 
