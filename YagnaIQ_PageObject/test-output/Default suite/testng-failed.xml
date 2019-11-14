@@ -10,6 +10,13 @@
           <include name="loginTest"/>
         </methods>
       </class> <!-- com.qa.test.LoginPageTest -->
+      <class name="com.qa.test.RegisterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="registetrpagetest" invocation-numbers="9 10"/>
+        </methods>
+      </class> <!-- com.qa.test.RegisterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
